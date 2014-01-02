@@ -66,7 +66,7 @@ if( !class_exists( 'kdMultipleFeaturedImages' ) ) {
             
             $this->post_meta_key= 'kd_'.$this->id.'_'.$this->post_type.'_id';
             
-            $this->nonce        = 'mfi-'.$this->args['id'].$this->args['post_type'];
+            $this->nonce        = 'mfi-'.$args['id'].$args['post_type'];
             
             if( !current_theme_supports( 'post-thumbnails' ) ) {
                 add_theme_support( 'post-thumbnails' );
